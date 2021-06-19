@@ -1,6 +1,6 @@
-# Para o lar!
+# Para casa!
 
-Para o lar ficam as seguintes rotas das demandas de negócio:
+Para casa ficam as seguintes rotas das demandas de negócio:
 
 ### [GET] "/estados/todos"
 
@@ -10,7 +10,7 @@ Retorna lista completa de estados-cidades
 
 Retorna nome, sigla e cidades de uma sigla especifica
 
-O exercício para o lar devera ser feito dentro da pasta servidor-paraolar. Lá você devera criar um novo servidor e configurar sua porta e criar essas duas rotas. 
+O exercício para casa devera ser feito dentro da pasta servidor-para-casa. Lá você devera criar um novo servidor e configurar sua porta e criar essas duas rotas. 
 
 ```bash
 		\--📂 On11-TodasEmTech-s7-API-GET
@@ -19,7 +19,7 @@ O exercício para o lar devera ser feito dentro da pasta servidor-paraolar. Lá 
 			|
 			\--📂meu-primeiro-servidor
 			|				
-			**\--📂servidor-paraolar
+			**\--📂servidor-para-casa
 			    |   server.js
 			    📂---data
 			    |       estados-cidades.json**
