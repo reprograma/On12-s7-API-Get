@@ -1,5 +1,5 @@
-# On11-TodasEmTech-s7-API-GET
-Turma Online 11 - Todas em Tech | Back-end | 2021 | Introdução à API: GET
+# On12-TodasEmTech-s7-API-GET
+Turma Online 12 | Back-end | 2021 | Introdução à API: GET
 
 # Principais comando usados
 
@@ -95,9 +95,9 @@ Retorna somente as cidades de uma sigla especifica
 
 ---
 
-# Para o lar!
+# Para a casa!
 
-Para o lar ficam as seguintes rotas das demandas de negócio:
+Para casa ficam as seguintes rotas das demandas de negócio:
 
 ### [GET] "/estados/todos"
 
@@ -107,7 +107,7 @@ Retorna lista completa de estados-cidades
 
 Retorna nome, sigla e cidades de uma sigla especifica
 
-O exercício para o lar devera ser feito dentro da pasta servidor-paraolar. Lá você devera criar um novo servidor e configurar sua porta e criar essas duas rotas. 
+O exercício para casa devera ser feito dentro da pasta servidor-para-casa. Lá você devera criar um novo servidor e configurar sua porta e criar essas duas rotas. 
 
 ```bash
 		\--📂 On11-TodasEmTech-s7-API-GET
@@ -116,7 +116,7 @@ O exercício para o lar devera ser feito dentro da pasta servidor-paraolar. Lá 
 			|
 			\--📂meu-primeiro-servidor
 			|				
-			**\--📂servidor-paraolar
+			**\--📂servidor-para-casa
 			    |   server.js
 			    📂---data
 			    |       estados-cidades.json**
