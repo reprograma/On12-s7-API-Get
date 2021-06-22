@@ -20,6 +20,9 @@ app.get("/jurema", (request, response) => {
             "idade": "adulta"
         },
         {
+            "foto": "https://drive.google.com/file/d/15wN7afvLOWJAJBzGR6j9nn0q58b2fZ9l/view?usp=sharing"
+        },
+        {
             "dona": "Vitoria",
             "tempo": "4 meses"
         }
