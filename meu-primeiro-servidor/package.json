@@ -1,16 +1,28 @@
 {
   "name": "meu-primeiro-servidor",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Projeto do meu primeiro servidor",
+=======
+  "description": "",
+>>>>>>> ad403661bb5dbaa8635cdca168c681fc99a86902
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+<<<<<<< HEAD
   "author": "Dannyeli Cristina",
+=======
+  "author": "",
+>>>>>>> ad403661bb5dbaa8635cdca168c681fc99a86902
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.7"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ad403661bb5dbaa8635cdca168c681fc99a86902
