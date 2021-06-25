@@ -3,7 +3,6 @@
 // http request OK
 // enviar response OK
 
-const { response } = require("express")
 const express = require("express") // importando express
 const app = express() // colocando express disponível para ser usado no arquivo (instanciando)
 
@@ -29,7 +28,7 @@ app.get("/jurema", (request, response) => {
     ])
 })
 
-app.listen(3000, () => { // reservando a porta no meu computador para o servidor local
-    console.log('Meu primeiro servidor rodando na porta 3000') // adicionar console para verificar no terminal
+app.listen(6000, () => { // reservando a porta no meu computador para o servidor local
+    console.log('Meu primeiro servidor rodando na porta 6000') // adicionar console para verificar no terminal
 })
 
