@@ -1,0 +1,16 @@
+{
+  "name": "servidor-para-casa",
+  "version": "1.0.0",
+  "description": "O exercício para casa devera ser feito dentro da pasta servidor-para-casa. Onde será criado um novo servidor e configurada sua porta e criar duas rotas.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Jezielle Cunha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
