@@ -37,53 +37,8 @@ npm install
 ## Demanda de Negócio
 
 Dentro do trabalho de desenvolvimento de softwares é bem difícil que trabalhemos sozinhas e na maioria das vezes não seremos nós que decidiremos o que uma API vai fazer. Quando trabalhamos construindo APIs, muitas vezes as necessidades e demandas virão de pessoas não técnicas, serão seus clientes ou a área de negócio que dirão o que querem que sua API faça.
-Como por exemplo, essas demandas que vieram para a nossa primeira API: 
 
-- quero poder consultar uma lista dos filmes da ghibli por titulo, id e também a lista completa.
-- quero uma api que retorne os Estados e as cidades, tem que conseguir filtrar por sigla
-- tem que filtrar somente as cidades pela sigla
-- tem que apresentar somente os nomes e as siglas dos estados
-- se o usuário digitar errado quero retorno do erro amigavel
-
-Muitas vezes fica pra as desenvolvedoras receber demandas mais abstratas e construir a API que atendam à elas. Nessa caso, a primeira etapa é escrever de forma clara quais serão as necessidades:
-
-- Todas as rotas serão de consulta e leitura, logo, todas se referem ao método GET
-- Teremos 2 jsons, um com os filmes da ghibli e outro com uma lista de estados e suas respectivas cidades
-- Todas as rotas devem ter tratamentos de erros caso o cliente envie valores invalidos
-- A lista de filmes ghibli tem as seguintes demandas:
-    - Retornar todos os filmes
-    - Pesquisa por nome que retorne o nome, id e descrição
-    - Pesquisa por id que retorne o nome, id e descrição
-- A lista de estados e cidades tem as seguintes demanadas:
-    - Retornar todas os estados e suas cidades
-    - Retornar todos os estados e siglas, sem as cidades
-    - Pesquisa por sigla que retorne o nome do estado, sigla e suas cidades
-    - Pesquisa por sigla que retorne somente as cidades do estado pesquisado
-
-Agora que conseguimos definir bem quais foram as demandas podemos partir para a decisão das rotas da nossa API!
-
-## Rotas
-
-### [GET] "/filmes"
-
-Retorna todos os filmes
-
-### [GET] "/filmes/{id}"
-
-Retorna filme pelo id
-
-### [GET] "/filmes/filtro"
-
-Retorna filme pelo titulo
-parâmetros titulo: string
-
-### [GET] "/estados/todos"
-
-Retorna lista completa de estados-cidades
-
-### [GET] "/estados"
-
-Retorna somente o nome e a sigla de cada estado
+Retornar somente o nome e a sigla de cada estado
 
 ### [GET] "/estados/{sigla}"
 
@@ -123,3 +78,7 @@ O exercício para casa devera ser feito dentro da pasta servidor-para-casa. Lá 
 ```
 
 Observe que o json de estados-cidades, está um pouco mais simples! **O foco desse exercício é que vocês consigam entender bem quais são os comandos necessários para criar um servidor com node.js**
+
+
+
+![](https://media.giphy.com/media/1yjZXySg7tSohpcmUM/giphy.gif)
