@@ -1,45 +1,48 @@
-// Criou o arquivo do servidor
-// npm init
-// instalou express
-// instalou nodemon
-// atualizou o script do npm start
 
-const express = require("express") // importando o express para o documento
-const app = express() // instanciando o express
+// abre o git bash 
+// vai para a pasta onde você quer desenvolver o projeto
+// touch server.js - cria a pasta server.js no local
+// npm init - cria o arquivo package json
+// npm i express - instala os pacotes
+// npm i nodemon
 
-// importar o arquivo json de filmes
-const filmes = require("./data/ghibli.json")
+const { response, request } = require('express')
+const express = require('express')
+const app = express() // instanciando express(colocando ele disponivel no arquivo)
 
-// definir rota principal
+//importando arquivo da pasta local
+const filmes = require('./data/ghibli.json')
 
-app.get("/", (request, response) => {
-    response.status(200).send({ "mensagem": "Salve! <3" })
+
+//mensagem de retorno ao acessar a localhost
+app.get('/', (req, res) => {
+res.status(200).send('Salve! <3')
 })
 
-app.get("/filmes", (request, response) => { // definindo a rota /filmes
-    response.status(200).send(filmes) // enviando os filmes como resposta
+
+//importando o JSON dos filmes  na rota e tendo o json como retorno
+app.get('/filmes', (req, res) => { 
+    res.status(200).send(filmes)
 })
 
-// definir um endpoint para filtrar filmes pelo titulo, usando query params
-app.get("/filmes/filtro", (request, response) => {
-    const tituloRequisitado = request.query.titulo //recebendo request acessando as query enviadas e aceitando somente aquela chave titulo
-    //ARRAY.find(ELEMENTO => titulo dentro de ELEMENTO tem que ser igual ao titulo requisitado) ele retorna o primeiro que encontrar
-    response.status(200).json(filmes.find(filme => filme.title == tituloRequisitado))
-})
 
-// definir um endpoint com id para filtrar filmes pelo id, usando path params
-app.get("/filmes/:identificao", (request, response) => {
-    // entender qual id o cliente está requerindo
-    const idRequisitado = request.params.identificao
+//definir um endpoint com id
+
+app.get('/filmes/:identificacao', (request, response) => {
+    //parte 1 = entender qual id o usuario esta tentando acessar
+    const idRequisitado = request.params.identificacao
     console.log(idRequisitado)
 
-    // entender o id de cada objeto da minha array
+    //parte 2 = entender o id de cada obj da minha array
     response.status(200).send(filmes.find(filme => filme.id == idRequisitado))
 })
 
 
-// definir uma porta para o servidor local
+//AQUI IDENTIFICA Q O SERVIDOR ESTÁ ATIVO na porta 3000
 app.listen(3000, () => {
-    console.log("Servidor rodando na porta 3000")
-})
+    console.log('Servidor rodando na porta 3000')
+}) 
+
+
+
 

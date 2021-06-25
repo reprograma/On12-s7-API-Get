@@ -1,13 +1,13 @@
 {
   "name": "meu-primeiro-servidor",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto do meu primeiro servidor",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Larisse Rodrigues",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

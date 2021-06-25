@@ -1,15 +1,15 @@
-// criar porta OK
-// criar rota OK
-// http request OK
-// enviar response OK
+//criar porta
+//criar uma rota 
+//http request
+//enviar response
 
-const { response } = require("express")
-const express = require("express") // importando express
-const app = express() // colocando express disponível para ser usado no arquivo (instanciando)
+const express = require('express')
+const app = express() // instanciando express(colocando ele disponivel no arquivo)
 
-app.get("/", (request, response) => { // definindo uma rota
-    console.log('Uma requisição foi realizada') // adicionar console pra verificar no terminal
-    response.status(200).json("Salve! <3") // enviar um status 200 e enviar como resposta json
+app.get("/", (request, response) => {
+
+    console.log("Oi")
+    response.status(200).json("Salve! <3")
 })
 
 app.get("/jurema", (request, response) => {
@@ -17,19 +17,16 @@ app.get("/jurema", (request, response) => {
     response.status(200).json([
         {
             "nome": "Jurema",
-            "idade": "adulta"
+            "idade": "Adulta"
         },
         {
-            "foto": "https://drive.google.com/file/d/15wN7afvLOWJAJBzGR6j9nn0q58b2fZ9l/view?usp=sharing"
-        },
-        {
-            "dona": "Vitoria",
-            "tempo": "4 meses"
+            "Dona": "Vitoria",
+            "Tempo": "4 meses"
         }
     ])
 })
 
-app.listen(3000, () => { // reservando a porta no meu computador para o servidor local
-    console.log('Meu primeiro servidor rodando na porta 3000') // adicionar console para verificar no terminal
-})
-
+//CRIAR PORTA PARA RODAR
+app.listen(3000, () => {
+    console.log('Meu primeiro servidor rodando na porta 3000, Aeeee')
+}) 
