@@ -1,4 +1,4 @@
-# On12-TodasEmTech-s7-API-GET
+# On12-s7-API-GET
 Turma Online 12 | Back-end | 2021 | Introdução à API: GET
 
 # Principais comando usados
